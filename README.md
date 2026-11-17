@@ -5,8 +5,8 @@ Dit pakket is aangepast voor MBO 4 en een eerste kennismaking met Scrum.
 ## Bestanden
 - `docs/kickoff.html`
 - `docs/sprint-1.html` — 18 en 25 november 2026: procedurele PHP-basisgame
-- `docs/sprint-2.html` — 2 en 9 december 2026: dezelfde game omzetten naar OOP
-- `docs/sprint-3.html` — 16 december 2026 en 6 januari 2027: inheritance + afwerking
+- `docs/sprint-2.html` — 2 en 9 december 2026: dezelfde game omzetten naar OOP. Krijgen jullie later.
+- `docs/sprint-3.html` — 16 december 2026 en 6 januari 2027: inheritance + afwerking. Krijgen jullie later.
 - 13 januari 2027: bufferles, eindreview en eindpresentaties (beschreven in Sprint 3)
 - `starter-project/` — minimaal procedureel PHP-startproject met een visuele battle-interface
 - `teacher/docentnotities.md` — chronologische lesplanning voor docent
@@ -22,13 +22,14 @@ Dit pakket is aangepast voor MBO 4 en een eerste kennismaking met Scrum.
 
 ## GitHub-inrichting
 - Eén teamrepository, met de PHP-code en de vier HTML-opdrachtpagina's in `docs/`.
-- Eén GitHub Projects-bord met `Product Backlog`, `Ready`, `In Progress`, `Review`, `Done`.
+- Eén GitHub Projects-bord met `Product Backlog`, `Ready`, `In Progress`, `Testing`, `Review`, `Done`.
 - Gebruik Issues, Pull Requests en sprintlabels `sprint-1`, `sprint-2`, `sprint-3`.
 
 ## Game starten
 ```bash
 cd starter-project
 php -S localhost:8000
+Of starten met XAMPP of Laragon
 ```
 Open daarna http://localhost:8000.
 
