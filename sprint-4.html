@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="nl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Monster Battle Academy - PHP OOP en Scrum project voor MBO 4">
+<title>Sprint 4 · Vuur, water en gras | Monster Battle Academy</title><style>
+:root{--ink:#182235;--muted:#64748b;--paper:#f6f8fc;--card:#fff;--line:#e2e8f0;--red:#e94b5f;--blue:#3977d5;--green:#16866a;--gold:#e6a52e;--violet:#7756c9}
+*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.6 system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif}
+header{background:linear-gradient(125deg,#182235,#28466d);color:#fff;padding:34px 22px 30px}
+.wrap{max-width:1050px;margin:auto;padding:0 20px}
+.eyebrow{text-transform:uppercase;letter-spacing:.13em;font-size:.75rem;font-weight:800;color:#b8d5ff}
+h1{font-size:clamp(2rem,5vw,3.25rem);line-height:1.08;margin:.35rem 0 .8rem}
+header p{max-width:760px;color:#e2eaf6;margin:0}
+nav{display:flex;gap:8px;flex-wrap:wrap;margin-top:22px}
+nav a{color:#eaf2ff;text-decoration:none;border:1px solid #ffffff44;padding:7px 11px;border-radius:999px;font-size:.88rem}
+nav a:hover{background:#ffffff1c}
+main{padding:28px 0 60px}.hero-grid{display:grid;grid-template-columns:1.4fr .6fr;gap:18px;margin-bottom:20px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:21px;box-shadow:0 5px 18px #1d35570a;margin:0 0 16px}
+.card h2{margin:0 0 10px;font-size:1.35rem}.card h3{margin:14px 0 6px;font-size:1.05rem}
+.tag{display:inline-block;border-radius:999px;background:#eaf1ff;color:#2459a7;padding:4px 10px;font-size:.78rem;font-weight:800;margin:3px 5px 3px 0}
+.tag.green{background:#e3f5ee;color:#12684f}.tag.gold{background:#fff3d9;color:#8b5b00}.tag.purple{background:#f0eaff;color:#6041a8}
+ul,ol{padding-left:1.25rem}li{margin:.3rem 0}
+.cols{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+.three{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+.pokemon{display:flex;align-items:center;gap:14px}.pokemon img{width:88px;height:88px;image-rendering:pixelated;object-fit:contain;background:#f3f7ff;border-radius:16px;padding:7px}
+.callout{border-left:4px solid var(--blue);background:#eef5ff;padding:13px 16px;border-radius:8px;margin:14px 0}
+.warning{border-left-color:var(--gold);background:#fff8e8}
+table{width:100%;border-collapse:collapse;margin:10px 0;font-size:.94rem}th,td{text-align:left;padding:10px;border-bottom:1px solid var(--line);vertical-align:top}th{background:#f5f7fb}
+code{background:#f0f3f8;padding:2px 5px;border-radius:5px;font-size:.92em}
+pre{background:#172235;color:#e6edf7;padding:15px;border-radius:12px;overflow:auto;font-size:.9rem}
+.checklist{list-style:none;padding:0}.checklist li{padding-left:28px;position:relative;margin:8px 0}.checklist li:before{content:"☐";position:absolute;left:0;color:var(--blue);font-size:1.1rem}
+footer{color:var(--muted);font-size:.85rem;padding:18px 0 35px}
+.kpi{font-size:1.8rem;font-weight:850;line-height:1.2}.muted{color:var(--muted)}
+a{color:#245fb2}
+@media(max-width:720px){.hero-grid,.cols,.three{grid-template-columns:1fr}.pokemon img{width:70px;height:70px}header{padding-top:25px}}
+</style></head>
+<body><header><div class="wrap"><div class="eyebrow">MONSTER BATTLE ACADEMY · SPRINT 4</div><h1>Sprint 4 · Vuur, water en gras</h1><p>Er zijn verschillende monstertypes die erven van Monster en een eigen specialiteit hebben.</p>
+<nav>
+<a href="kickoff.html">Kick-off</a>
+<a href="sprint-1.html">Sprint 1</a><a href="sprint-2.html">Sprint 2</a>
+<a href="sprint-3.html">Sprint 3</a><a href="sprint-4.html">Sprint 4</a>
+<a href="sprint-5.html">Sprint 5</a><a href="sprint-6.html">Sprint 6</a>
+</nav>
+</div></header>
+<main class="wrap">
+<div class="hero-grid">
+ <section class="card"><span class="tag">SPRINT 4 / 6</span><span class="tag purple">Inheritance, overriding en eenvoudige type-effectiviteit</span><h2>Jullie missie</h2><p>Er zijn verschillende monstertypes die erven van Monster en een eigen specialiteit hebben.</p><div class="callout"><b>User story</b><br>Als speler wil ik verschillende soorten monsters met sterke en zwakke punten, zodat ik tactisch een monster kies.</div></section>
+ <section class="card pokemon"><img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/6.png" alt="Voorbeeld Pokémon sprite"><div><div class="kpi">Sprint 4</div><div class="muted">Werkende verbetering<br>in jullie game</div></div></section>
+</div>
+<section class="cols">
+ <div class="card"><h2>Nieuw programmeerconcept</h2><ul><li>Parent class en child class</li><li>extends en parent::__construct()</li><li>Method overriding</li><li>protected wanneer inheritance dat nodig maakt</li><li>Eenvoudige spelregels en condities</li></ul></div>
+ <div class="card"><h2>Wat bouwen jullie?</h2><ol><li>Maak Monster de basisklasse.</li><li>Maak FireMonster, WaterMonster en GrassMonster als child classes.</li><li>Geef elk type een eigen type-aanduiding of speciale eigenschap.</li><li>Voeg een type-effectiviteitsregel toe: vuur is sterk tegen gras, gras tegen water, water tegen vuur.</li><li>Toon bij een aanval waarom schade extra of minder groot is.</li></ol></div>
+</section>
+<section class="card"><h2>Acceptatiecriteria</h2><p>De Product Owner (docent) en het team gebruiken deze criteria om te bepalen of het werk echt klaar is.</p><ul class="checklist"><li>De drie gespecialiseerde classes erven van Monster.</li><li>Gedeelde eigenschappen en methods staan in de parent class.</li><li>Minimaal één method wordt in een child class overschreven of uitgebreid.</li><li>De type-effectiviteit werkt volgens de afgesproken spelregels.</li><li>De battle toont de uitkomst van de type-matchup.</li><li>Bestaande functionaliteit blijft werken.</li></ul></section>
+<section class="card"><h2>Scrum: jullie sprint in stappen</h2><table><tr><th>Moment</th><th>Teamafspraak</th></tr>
+<tr><td>Sprint Planning</td><td>Kies de Issues die haalbaar zijn. Schat ze grof in (S/M/L of story points). Spreek af wie met wie samenwerkt. Maak de Sprint Goal concreet.</td></tr>
+<tr><td>Daily Scrum</td><td>Iedereen deelt kort: wat heb ik gedaan, wat ga ik doen, wat blokkeert mij? Werk daarna het GitHub Project-bord bij.</td></tr>
+<tr><td>Werk verdelen</td><td>Maak kleine Issues. Koppel elke taak aan een student, maar programmeer waar mogelijk samen via pair programming.</td></tr>
+<tr><td>Review</td><td>Demo alleen werkende functionaliteit. Vraag feedback aan docent en klasgenoten.</td></tr>
+<tr><td>Retrospective</td><td>Kies één concrete verbetering voor de volgende sprint. Bijvoorbeeld: eerder committen of kleinere Issues maken.</td></tr></table>
+<div class="callout warning"><b>Voor beginnende Scrum-teams:</b> de Scrum Master is geen baas en verdeelt niet alle taken. De rol is om het proces te helpen, iedereen aan het woord te laten en blokkades zichtbaar te maken.</div></section>
+<section class="card"><h2>GitHub: wat moet zichtbaar zijn?</h2><ul class="checklist">
+<li>Maak voor elke user story en grotere taak een GitHub Issue.</li>
+<li>Gebruik het sprintlabel <code>sprint-4</code> en eventueel <code>feature</code> of <code>bug</code>.</li>
+<li>Zet Issues op het GitHub Projects-bord: Backlog, Ready, In Progress, Review, Done.</li>
+<li>Werk op een branch met een herkenbare naam, bijvoorbeeld <code>feature/issue-nummer-korte-naam</code>.</li>
+<li>Open een Pull Request en vraag minimaal één teamgenoot om review.</li>
+<li>Verwijs in de PR naar het Issue met <code>Closes #nummer</code>.</li>
+<li>Verplaats de taak pas naar Done als de acceptatiecriteria zijn gecontroleerd.</li>
+</ul><pre>git switch -c feature/issue-12-monster-team
+git add .
+git commit -m "Add trainer monster team"
+git push -u origin feature/issue-12-monster-team</pre></section>
+<section class="cols">
+ <div class="card"><h2>Definition of Done</h2><ul class="checklist">
+<li>De code werkt en is getest.</li><li>De code staat in een Pull Request.</li><li>Een teamgenoot heeft de code bekeken.</li><li>De PR is gemerged naar main.</li><li>De GitHub Issue is bijgewerkt en gesloten.</li><li>De werking is te demonstreren.</li></ul></div>
+ <div class="card"><h2>Demo tijdens de Sprint Review</h2><p>Laat hetzelfde aanvalstype tegen twee verschillende monstertypes zien en verklaar het verschil in schade.</p><h3>Reflectievraag</h3><p>Welk nieuw programmeerconcept hebben jullie deze sprint gebruikt, en welk probleem lost het op?</p></div>
+</section>
+<section class="card"><h2>Scopebewaking</h2><p>Beperk de types tot drie. Maak nog geen ingewikkeld type-combinatiesysteem. Schrijf de regels duidelijk op in de README.</p><p><b>Let op:</b> maak eerst de afgesproken functionaliteit af. Extra's zoals geluid, animaties, extra monsters of een winkel zijn pas aan de beurt als de Sprint Goal is gehaald.</p></section>
+<section class="card"><h2>Reflectie voor de retrospective</h2><ul class="checklist">
+<li>Wat ging deze sprint goed in onze samenwerking?</li><li>Waar verloren we tijd of liepen we vast?</li><li>Was ons werk klein genoeg en duidelijk genoeg op het bord?</li><li>Welke ene actie proberen we volgende sprint?</li></ul></section>
+</main><footer class="wrap">Monster Battle Academy · PHP OOP · MBO 4 · Educatief fanproject. Pokémon is een merk van de betreffende rechthebbenden; deze onderwijsopdracht is niet officieel verbonden aan Pokémon.</footer></body></html>
