@@ -1,38 +1,39 @@
-# Monster Battle Academy — PHP OOP & Scrum (MBO 4)
+# Monster Battle Academy — 3 sprints + bufferles
 
-Deze map bevat de kick-off en zes sprintopdrachten als zelfstandige HTML-pagina's.
+Dit pakket is aangepast voor MBO 4 en een eerste kennismaking met Scrum.
 
 ## Bestanden
-- `kickoff.html` — projectintroductie, Scrum-uitleg en GitHub-inrichting
-- `sprint-1.html` t/m `sprint-6.html` — opdracht, concepten, user story, taken, acceptatiecriteria en Scrum-werkwijze
+- `docs/kickoff.html`
+- `docs/sprint-1.html` — 18 en 25 november 2026: procedurele PHP-basisgame
+- `docs/sprint-2.html` — 2 en 9 december 2026: dezelfde game omzetten naar OOP
+- `docs/sprint-3.html` — 16 december 2026 en 6 januari 2027: inheritance + afwerking
+- 13 januari 2027: bufferles, eindreview en eindpresentaties (beschreven in Sprint 3)
+- `starter-project/` — minimaal procedureel PHP-startproject met een visuele battle-interface
+- `teacher/docentnotities.md` — chronologische lesplanning voor docent
 
-## Gebruik
-Open `kickoff.html` in een browser. De pagina's linken naar elkaar via de navigatie.
+## Scrum-activiteiten, exact volgens de lesplanning
+1. 18 november — Sprint Planning
+2. 25 november — Review + tussenpresentatie voor de klas
+3. 2 december — Retrospective + Sprint Planning
+4. 9 december — Review + tussenpresentatie voor de klas
+5. 16 december — Sprint Planning
+6. 6 januari — Uitgebreide retrospective + afrondingsplan voor eindoplevering
+7. 13 januari — Review + eindpresentaties
 
-## Voorstel GitHub repository
-```text
-monster-battle-team-XX/
-├── README.md
-├── docs/
-│   ├── kickoff.html
-│   ├── sprint-1.html
-│   └── ...
-├── public/
-│   └── assets/
-│       └── README.md
-├── src/
-└── tests/
+## GitHub-inrichting
+- Eén teamrepository, met de PHP-code en de vier HTML-opdrachtpagina's in `docs/`.
+- Eén GitHub Projects-bord met `Product Backlog`, `Ready`, `In Progress`, `Review`, `Done`.
+- Gebruik Issues, Pull Requests en sprintlabels `sprint-1`, `sprint-2`, `sprint-3`.
+
+## Game starten
+```bash
+cd starter-project
+php -S localhost:8000
 ```
+Open daarna http://localhost:8000.
 
-Zet de HTML-bestanden eventueel in `docs/`. Schakel GitHub Pages in via Settings → Pages als je de opdracht als website wilt publiceren.
+Het starterproject is expres **nog niet speelbaar**: de game-logica moet worden gebouwd door studenten.
+In Sprint 1 is OOP verboden; vanaf Sprint 2 is de omzetting naar objecten de hoofdopdracht.
 
-## GitHub Project-bord
-Maak een GitHub Project met kolommen/statussen:
-`Product Backlog` → `Ready` → `In Progress` → `Review` → `Done`
-
-Maak GitHub Issues voor de user stories en taken. Gebruik labels `sprint-1` t/m `sprint-6`, `feature`, `bug`, `question` en `blocked`.
-
-## Pokémon-assets
-De voorbeeldsprites laden rechtstreeks vanaf de openbare PokeAPI sprites repository. Dit zijn Pokémon-afbeeldingen van derden, geen eigen of rechtenvrije assets. Controleer gebruiksvoorwaarden en schoolbeleid. Voor een publiek portfolio of openbare release: vervang ze bij voorkeur door eigen monsterontwerpen of assets met een passende licentie en vermeld bronnen in `public/assets/README.md`.
-
-Dit is een educatief fanproject en is niet officieel verbonden aan of goedgekeurd door Pokémon, Nintendo, Game Freak of The Pokémon Company.
+## Assets
+De HTML-opdrachten verwijzen naar publieke Pokémon-sprites (PokeAPI). De startergame gebruikt lokale, eigen placeholder-SVG's. Controleer auteursrecht en schoolbeleid bij externe Pokémon-assets; maak bij publicatie eventueel eigen monsters.
