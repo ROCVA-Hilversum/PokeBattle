@@ -22,13 +22,14 @@ Dit pakket is aangepast voor MBO 4 en een eerste kennismaking met Scrum.
 
 ## GitHub-inrichting
 - Eén teamrepository, met de PHP-code en de vier HTML-opdrachtpagina's in `docs/`.
-- Eén GitHub Projects-bord met `Product Backlog`, `Ready`, `In Progress`, `Review`, `Done`.
+- Eén GitHub Projects-bord met `Product Backlog`, `Ready`, `In Progress`, `Testing`, `Review`, `Done`.
 - Gebruik Issues, Pull Requests en sprintlabels `sprint-1`, `sprint-2`, `sprint-3`.
 
 ## Game starten
 ```bash
 cd starter-project
 php -S localhost:8000
+Of starten met XAMPP of Laragon
 ```
 Open daarna http://localhost:8000.
 
