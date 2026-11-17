@@ -5,8 +5,8 @@ Dit pakket is aangepast voor MBO 4 en een eerste kennismaking met Scrum.
 ## Bestanden
 - `docs/kickoff.html`
 - `docs/sprint-1.html` — 18 en 25 november 2026: procedurele PHP-basisgame
-- `docs/sprint-2.html` — 2 en 9 december 2026: dezelfde game omzetten naar OOP
-- `docs/sprint-3.html` — 16 december 2026 en 6 januari 2027: inheritance + afwerking
+- `docs/sprint-2.html` — 2 en 9 december 2026: dezelfde game omzetten naar OOP. Krijgen jullie later.
+- `docs/sprint-3.html` — 16 december 2026 en 6 januari 2027: inheritance + afwerking. Krijgen jullie later.
 - 13 januari 2027: bufferles, eindreview en eindpresentaties (beschreven in Sprint 3)
 - `starter-project/` — minimaal procedureel PHP-startproject met een visuele battle-interface
 - `teacher/docentnotities.md` — chronologische lesplanning voor docent
